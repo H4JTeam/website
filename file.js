@@ -6,7 +6,6 @@
   setupHackerPanel();
   setupSmoothScrolling();
   setupMobileMenu();
-  // faqCollapsableMenu();
   setupFaqButton();
 })();
 
@@ -384,15 +383,6 @@ function setupMobileMenu() {
   }
 }
 
-// function faqCollapsableMenu() {
-//   document.querySelectorAll(".faq-question").forEach((question) => {
-//     question.addEventListener("click", () => {
-//       const item = question.parentElement;
-//       item.classList.toggle("active");
-//     });
-//   });
-// }
-
 function setupFaqButton() {
   const toggleButton = document.getElementById("toggle-faq-btn");
   const faqItems = document.querySelectorAll(".faq-item");
@@ -418,4 +408,3 @@ function setupFaqButton() {
     toggleButton.classList.toggle("active", allOpen);
   });
 }
-
