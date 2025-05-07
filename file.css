@@ -304,7 +304,7 @@ nav ul li a:hover::after {
 }
 
 .coding-overlay::before {
-  content: "01010101 JUSTICE 10101010 HACK 101010 SECURE 01010 CODE 1010 ETHICS 10101";
+  content: "";
   position: absolute;
   top: 25%;
   left: 10%;
@@ -319,7 +319,7 @@ nav ul li a:hover::after {
 }
 
 .coding-overlay::after {
-  content: "{ hackForJustice(); } if(truth) { revealTruth(); } while(injustice) { fightBack(); }";
+  content: "";
   position: absolute;
   top: 40%;
   left: 30%;
@@ -1319,7 +1319,7 @@ footer::before {
 }
 
 .faq-overlay::before {
-  content: "01010101 JUSTICE 10101010 HACK 101010 SECURE 01010 CODE 1010 ETHICS 10101";
+  content: "";
   position: absolute;
   top: 25%;
   left: 10%;
@@ -1333,7 +1333,7 @@ footer::before {
 }
 
 .faq-overlay::after {
-  content: "{ hackForJustice(); } if(truth) { revealTruth(); } while(injustice) { fightBack(); }";
+  content: "";
   position: absolute;
   top: 40%;
   left: 30%;
@@ -1357,7 +1357,7 @@ footer::before {
 }
 
 .faq-code-line1 {
-  content: "function solveIssue(problem) { return findEthicalSolution(problem); }";
+  content: "";
   top: 15%;
   right: 5%;
   font-size: 13px;
@@ -1365,7 +1365,7 @@ footer::before {
 }
 
 .faq-code-line2 {
-  content: "class DigitalRights { constructor() { this.protect(); this.extend(); } }";
+  content: "";
   bottom: 30%;
   left: 15%;
   font-size: 12px;
@@ -1373,7 +1373,7 @@ footer::before {
 }
 
 .faq-code-line3 {
-  content: "const securityAudit = async (system) => { await findVulnerabilities(system); }";
+  content: "";
   bottom: 15%;
   right: 10%;
   font-size: 11px;
@@ -1381,7 +1381,7 @@ footer::before {
 }
 
 .faq-code-line4 {
-  content: "if (privacy.compromised) { activateCountermeasures(); notifyUsers(); }";
+  content: "";
   top: 60%;
   left: 20%;
   font-size: 14px;
