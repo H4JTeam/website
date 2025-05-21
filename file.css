@@ -672,6 +672,29 @@ section::before {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive Three-panel section */
+
+@media (max-width: 768px) {
+  .three-panel-section {
+    flex-direction: column;
+  }
+
+  .panel.center {
+    flex-direction: column;
+  }
+
+  .panel.right,
+  .panel.left {
+    flex-direction: row;
+  }
+
+  .panel-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
+
 /* FAQ Section Styles */
 .faq-section {
   flex: 1 0 auto;
@@ -1566,6 +1589,7 @@ footer::before {
   .panel.right {
     border-top: 1px solid var(--accent-color);
     padding-top: 20px;
+    min-height: 80px;
   }
 
   .panel-image {
@@ -1594,7 +1618,7 @@ footer::before {
   #law-content {
     padding: 15px !important;
     overflow-y: auto;
-    max-height: none !important;
+    max-height: 800px !important;
   }
 
   #hacker-content > div,
