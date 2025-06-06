@@ -4733,6 +4733,70 @@ html.no-csstransitions .s-hero__content {
     border-bottom: 2px solid white;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-right:2rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.modal-actions button {
+   all:unset;                       
+  display: inline-block;
+  padding: 0.3rem 0.9rem;              
+  font-size: 1.5rem;
+  line-height: 2;
+  background: #2a2a2a;
+  color: red;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: auto;
+}
+
+.modal-actions button:hover {
+  background: #444;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color:red;
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
