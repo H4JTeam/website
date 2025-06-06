@@ -287,7 +287,7 @@
     });
   };
 
-  /* initialize
+  /* duscord
    * ------------------------------------------------------ */
   (function ssInit() {
     ssPreloader();
@@ -303,6 +303,9 @@
   })();
 })(jQuery);
 
+/* discord pop up
+   * ------------------------------------------------------ */
+
 function openModal() {
   document.getElementById('countryModal').style.display = 'flex';
 }
@@ -312,6 +315,23 @@ function closeModal() {
 }
 
 function redirectToDiscord() {
-  window.location.href = 'https://discord.gg/bABCxGNBGg';
+  window.open('https://discord.gg/bABCxGNBGg','_blank');
+}
+
+
+
+/* pgp
+   * ------------------------------------------------------ */
+   function openPGPModal() {
+  document.getElementById('pgpModal').style.display = 'flex';
+}
+
+function closePGPModal() {
+  document.getElementById('pgpModal').style.display = 'none';
+}
+
+function copyPGPKey() {
+  const key = document.getElementById('pgpKey').innerText;
+  navigator.clipboard.writeText(key);
 }
 
