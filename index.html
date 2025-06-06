@@ -61,8 +61,8 @@
                     <li><a class="smoothscroll" href="#about" title="About">About</a></li>
                     <li><a class="smoothscroll" href="#services" title="FAQ">FAQ</a></li>
                     <li><a class="smoothscroll" href="#portfolio" title="Case Studies">Case Studies</a></li>
-                    <li><a class="smoothscroll" href="#security" title="Security">Security</a></li>
-					<li><a class="smoothscroll" href="#contact" title="Contact">Contact Us</a></li>
+                    <li><a class="smoothscroll" href="#securityinfo" title="Security">Security</a></li>
+					          <li><a class="smoothscroll" href="#contactinfo" title="Contact">Contact Us</a></li>
                 </ul>
                
             </nav> <!-- end s-header__nav-wrap -->
@@ -287,28 +287,22 @@
 
             <div class="row block-large-1-2 block-tab-full s-about__process item-list">
                 <div class="column item item-process" data-aos="fade-up">
-                    
-					<h3 class="item-title">Project: OSINT</h3>
-                    <p>
-                        Advised law enforcement of a novel OSINT method which enabled them to correctly identify the real world ip addresses of a Tor-based illegal site. 
-						<br> <br>
-						The Global Anti-Scam Alliance (GASA), in collaboration with Feedzai, has released its 2024 Global State of Scams report, uncovering staggering insights into the prevalence and impact of scams worldwide. Based on responses from 58,329 individuals across diverse regions, the report reveals the monumental economic and emotional toll scams take on consumers. The most eye-opening finding? Scammers have siphoned away over $1.03 trillion globally in just the past year.
-                    </p>
-                </div>
-                <div class="column item item-process" data-aos="fade-up">
-                    
-                    <h3 class="item-title">Project: Dark Web</h3>
-                    <p>
-                        Involved in a CSAM dark web site take down. 
-						<br> <br>
-						About 98% of reported CSAM involve children under the age of 13, with 30% under 10, including infants and toddlers. The National Center for Missing and Exploited Children (NCMEC) received over 36 million reports of suspected child sexual abuse through its CyberTipline. These reports included over 104 million files related to CSAM. This is just the US.
-                    </p>
-                </div>
-                <div class="column item item-process" data-aos="fade-up">
                     <h3 class="item-title">Collaboration: Training</h3>
                     <p>
                         We provide law enforcement technical training and on-going consultancy.
                     </p>
+                </div>
+                <div class="column item item-process" data-aos="fade-up">
+                    <h3 class="item-title">Project: OSINT</h3>
+                    <p>
+                        Advised law enforcement of a novel OSINT method which enabled them to correctly identify the real world ip addresses of a Tor-based illegal site.
+                    </p>
+                </div>
+                <div class="column item item-process" data-aos="fade-up">
+                    <h3 class="item-title">Project: Dark Web</h3>
+                    <p>
+                        Involved in a CSAM dark web site take down.
+                    </p></br>
                 </div>
 
             </div>
@@ -316,29 +310,114 @@
         </div> <!-- folio-list -->
 
     </section> <!-- end s-portfolio -->
-
+      
+    
+      
+      <!-- this is the section for the security -->
+      
+      
+ <section id="securityinfo" class="section-security">
+       
+       <div class="row s-porfolio__top">
+            <div class="column large-6 w-900-stack">
+                <div class="section-title" data-num="04" data-aos="fade-up">
+                    <h3 class="h6">Security</h3>
+                </div>
+            </div>
+            <div class="column large-6 w-900-stack">
+            </br></br>
+                <h1 class="display-1" data-aos="fade-up">
+                    Security Information
+                </h1>
+            </div>
+        </div>
+     <div class="row block-large-1-2 block-tab-full s-services__services item-list">
+            <div class="column item item-service" data-aos="fade-up">
+                <!-- <span class="service-icon service-icon--product-design"></span> -->
+                <h3 class="item-title">I am law enforcement seeking assistance. How can I connect with you?</h3>
+                <p>
+                    Using your agency provided email address, you may send an email to info@hackers4justice.com.
+                </p>
+            </div>
+            <div class="column item item-service" data-aos="fade-up">
+                <!-- <span class="service-icon service-icon--branding"></span> -->
+                <h3 class="item-title">My agency will require identity verification. Is your organization prepared
+                    to submit these documents?</h3>
+                <p>
+                    Yes, our team is composed of law-abiding individuals who are prepared to submit identity
+                    documentation upon request in order to actively assist in your case.
+                </p>
+            </div>
+              
+        </div>
+   
+  </section>
 
    
 
 
     <!-- contact
     ================================================== -->
-      <section id="contactinfo"></section>
+      
        
-    <section class="s-contact">
+    <section id="contactinfo" class="s-contact">
 
         <div class="row narrower s-contact__top h-text-center">
             <div class="column">
-                <h3 class="h6">Contact Us</h3>
+                <h3 class="h6"> For media inquiries, promotional collaborations, or any further questions, feel free to reach out to us at
+    <a class="s-contact__email" href="mailto:info@hackers4justice.org">info@hackers4justice.org</a></h3>
                 
+              <h3 class="h6"> For the law enforcoment officers you can sent us using the below pgp key </h3>
+              <button onclick="openPGPModal()" class="pgp-btn">PGP Key</button>
             </div>
-        </div> <!-- s-footer__top -->
+        </div> 
+      
+      
+  </br></br>
+       <div class="ss-copyright">
+        <span>Copyright Flare 2020</span>
+        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+       </div>
+    </div>
+      <!-- s-footer__top -->
 
-        <div class="row h-text-center">
-            <div class="column">
-                <p class="s-contact__email">
-                    <a href="#"
-   onclick="alert(`-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+
+
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+              
+              <div id="countryModal" class="modal">  <!-- this is for the countries pop up at the start -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Notice</h2>
+    <p>
+      Citizens of the following countries are not permitted to apply for membership:
+      <br><strong>Afghanistan, Belarus, China, Cuba, Iran, Lebanon, North Korea, Russia, Syria, Venezuela</strong>.
+    </p>
+      <p>Individuals who have been convicted of any of the following crimes are not permitted to apply for membership: <strong>sexual crime, possession of CSAM material, theft or fraud of any kind.</strong></p>
+    <p>By continuing, you confirm you are not a citizen of these countries.</p>
+    <div class="modal-actions">
+      <button onclick="redirectToDiscord()" >OK</button>
+      <button onclick="closeModal()" >Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- this is for the countries pop up at the start -->
+<div id="pgpModal" class="modal1">
+  <div class="modal-content1">
+    <span class="close1" onclick="closePGPModal()">&times;</span>
+    <h2>Public PGP Key</h2>
+    <pre id="pgpKey">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mDMEaD+p1BYJKwYBBAHaRw8BAQdA/F2PZt5WPJBYW3kIJ5YAm0evO3jQ0pin3X6q
 HPGONue0I2g0al9pbmZvIDxpbmZvQGhhY2tlcnM0anVzdGljZS5jb20+iJkEExYK
@@ -350,137 +429,12 @@ F8XUjAslfls5I04DAQgHiH4EGBYKACYWIQQyqoI0n5q2y8SnYuzkZpJx9tz7JQUC
 aD+p1AIbDAUJBaUG7AAKCRDkZpJx9tz7JbhdAP9WATqw79sQpqGzygYzZBNKo2Nn
 KubOXvM3kzAza/2HjAD9EMk593xMwbT84Klc7PWKxBfVM0tDAfPNkWZLUF/IDQ4=
 =XHlw
------END PGP PUBLIC KEY BLOCK-----`);
-window.location.href='mailto:info@hackers4justice.org';
-return false;">
-   info@hackers4justice.org
-</a>
-
-
-                </p>
-            </div>
-        </div>
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer class="s-footer">
-        <div class="row row-y-top">
-
-            <div class="column large-8 medium-12">
-                <div class="row">
-                    <div class="column large-7 tab-12 s-footer__block">
-                        <h4 class="h6">Where to Find Us</h4>
-
-                        <p>
-                            1600 Amphitheatre Parkway <br>
-                            Mountain View, California <br>
-                            94043 US <br>
-                            <a href="tel:197-543-2345">+197&nbsp;543"&nbsp;2345</a>
-                        </p>
-                    </div>
-
-                    <div class="column large-5 tab-12 s-footer__block">
-                        <h4 class="h6">Follow Us</h4>
-
-                        <ul class="s-footer__list">
-                            <li><a href="#0">Facebook</a></li>
-                            <li><a href="#0">Twitter</a></li>
-                            <li><a href="#0">Instagram</a></li>
-                            <li><a href="#0">Dribbble</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column large-4 medium-12 s-footer__block--end">
-                <a href="mailto:#0" class="btn h-full-width">Let's Talk</a>
-
-                <div class="ss-copyright">
-                    <span>Copyright Flare 2020</span>
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                </div>
-            </div>
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    top
-                </a>
-            </div> <!-- end ss-go-top -->
-
-        </div>
-    </footer>
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button type="button" class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button type="button" class="pswp__button pswp__button--share"
-                        title="Share"></button> <button type="button" class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button type="button"
-                        class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-                <button type="button" class="pswp__button pswp__button--arrow--left"
-                    title="Previous (arrow left)"></button>
-                <button type="button" class="pswp__button pswp__button--arrow--right"
-                    title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> <!-- end photoSwipe background -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-              
-              <div id="countryModal" class="modal">  <!-- this is for the pop up -->
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Notice</h2>
-    <p>
-      Citizens of the following countries are not permitted to apply for membership:
-      <br><strong>Afghanistan, Belarus, China, Cuba, Iran, Lebanon, North Korea, Russia, Syria, Venezuela</strong>.
-    </p>
-      <p>Individuals who have been convicted of any of the following crimes are not permitted to apply for membership: <strong>sexual crime, possession of CSAM material, theft or fraud of any kind.</strong></p>
-    <p>By continuing, you confirm you are not a citizen of these countries.</p>
-    <div class="modal-actions">
-      <button onclick="redirectToDiscord()">OK</button>
-      <button onclick="closeModal()">Cancel</button>
-    </div>
+-----END PGP PUBLIC KEY BLOCK-----
+    </pre>
+    <button onclick="copyPGPKey()" class="copy-btn">Copy</button>
   </div>
 </div>
+            
 
 
 </body>
