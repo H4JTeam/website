@@ -302,3 +302,16 @@
     ssBackToTop();
   })();
 })(jQuery);
+
+function openModal() {
+  document.getElementById('countryModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('countryModal').style.display = 'none';
+}
+
+function redirectToDiscord() {
+  window.location.href = 'https://discord.gg/bABCxGNBGg';
+}
+
