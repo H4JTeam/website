@@ -68,11 +68,8 @@
             </nav> <!-- end s-header__nav-wrap -->
             
              <!-- link to the contact -->
-  <a href="https://discord.gg/bABCxGNBGg"
-   onclick="if(confirm('Citizens of the following countries are not permitted to apply for membership:\n\nAfghanistan, Belarus, China, Cuba, Iran, Lebanon, North Korea, Russia, Syria, Venezuela.\n\nIndividuals who have been convicted of any of the following crimes are not permitted to apply for membership:\n\nAny sexual crime, possession of CSAM material, theft or fraud of any kind.')) { window.open('https://discord.gg/bABCxGNBGg', '_blank'); } return false;"
-   class="btn btn--primary btn--small">
-   Discord
-</a>
+ <a class="btn btn--primary btn--small" onclick="openModal()">Discord</a>
+
           
         </div> <!-- end header-content -->
 
@@ -461,6 +458,24 @@ return false;">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+              
+              <div id="countryModal" class="modal">  <!-- this is for the pop up -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Notice</h2>
+    <p>
+      Citizens of the following countries are not permitted to apply for membership:
+      <br><strong>Afghanistan, Belarus, China, Cuba, Iran, Lebanon, North Korea, Russia, Syria, Venezuela</strong>.
+    </p>
+      <p>Individuals who have been convicted of any of the following crimes are not permitted to apply for membership: <strong>sexual crime, possession of CSAM material, theft or fraud of any kind.</strong></p>
+    <p>By continuing, you confirm you are not a citizen of these countries.</p>
+    <div class="modal-actions">
+      <button onclick="redirectToDiscord()">OK</button>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 
 </body>
 
