@@ -3149,8 +3149,8 @@ input::-moz-focus-inner {
 .s-header__nav {
     list-style: none;
     font-family: var(--font-2);
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
     line-height: 6rem;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
@@ -3485,16 +3485,16 @@ input::-moz-focus-inner {
     position: relative;
 }
 
-.s-hero__bg {
-    background-image: url(../images/hero-bg.jpg);
+ .s-hero__bg {
+    background-image: url(../images/woman.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: top 60px right;
+    background-size: contain;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 36.5vw;
+    left: 0;
 }
 
 .s-hero__bg::after {
@@ -3536,46 +3536,36 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content h1 {
-    font-size: 22rem;
+    font-size: 15rem;
     font-weight: 600;
-    letter-spacing: -.04em;
+    letter-spacing: 0.1em;
     line-height: 1;
     color: var(--color-1);
     margin-bottom: 0;
     position: relative;
 }
 
-.s-hero__content h1::before {
-    display: block;
-    content: "";
-    height: 10rem;
-    width: 20rem;
-    background-image: url(../images/dots.svg);
-    -webkit-transform: translateX(-4rem);
-    transform: translateX(-4rem);
-    opacity: .25;
-    position: absolute;
-    bottom: .14em;
-    right: 100%;
-}
+
+
 
 /* hero content about
  * ----------------------------------------------- */
 .s-hero__content-about {
     font-family: var(--font-2);
+    max-width: 40ch;
     font-weight: 400;
-    font-size: 3.6rem;
+    font-size: 3rem;
     line-height: 1.444;
     color: var(--color-white);
-    padding-left: 3.6em;
+    padding-left: 0;
     position: relative;
 }
 
 .s-hero__content-about::before {
     content: "";
-    display: block;
+    display: none;
     height: 1px;
-    width: 2.4em;
+    width: 2em;
     background-color: var(--color-border);
     position: absolute;
     left: .5em;
@@ -3669,7 +3659,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__scroll-link {
-    display: inline-block;
+    display: none;
     font-family: var(--font-2);
     font-weight: 300;
     font-size: 9px;
@@ -3895,13 +3885,9 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 900px) {
     .s-hero__bg {
-        display: block;
-        width: 50vw;
-        height: 50vh;
-        top: 12rem;
-        right: 0;
-        bottom: auto;
-        left: auto;
+        background-image: none !important;
+        
+        
     }
     .s-hero__content {
         max-width: 600px;
@@ -3959,17 +3945,38 @@ html.no-csstransitions .s-hero__content {
     }
 }
 
-@media screen and (max-width: 500px) {
+ @media screen and (max-width: 500px) {
     .s-hero__content h1::before {
         left: -6rem;
         bottom: .6em;
+        padding-right: 4rem;
+ 		padding-left: .5em;
     }
     .s-hero__content-about {
-        font-size: 2.6rem;
-        padding-right: 4rem;
-        padding-left: .5em;
+        
+        font-size: 2rem; 
+       
     }
 }
+
+@media screen and (max-width: 430px) {
+  .s-hero__content-about {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    max-width: 90vw;
+  }
+
+  h1 {
+    margin-top: 2rem;
+    
+  }
+
+  .s-hero__content-about p {
+    font-size: 2.3rem;  
+    line-height: 1.6;    
+  }
+}
+
 
 @media screen and (max-width: 400px) {
     .s-header__logo {
@@ -3978,15 +3985,14 @@ html.no-csstransitions .s-hero__content {
     .s-header__menu-toggle {
         right: 3.2rem;
     }
-    .s-hero__content h1::before {
-        left: -8rem;
+    
     }
     .s-hero__content {
         padding-bottom: 14vh;
     }
-    .s-hero__content-about {
-        font-size: 2.2rem;
-        padding-right: 6rem;
+    
+        
+        
     }
     .s-hero__video {
         right: auto;
@@ -4039,7 +4045,7 @@ html.no-csstransitions .s-hero__content {
 
 .s-about .horizontal-line::before {
     content: "";
-    display: block;
+    display:none;
     width: 1px;
     background-color: var(--color-1-darker);
     position: absolute;
@@ -4057,7 +4063,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/about-photo.jpg);
+    background-image: url(../images/2faces.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4711,7 +4717,7 @@ html.no-csstransitions .s-hero__content {
 .s-contact__email {
     margin-top: var(--vspace-1_5);
     font-family: var(--font-2);
-    font-size: calc(var(--text-size) * 4);
+    font-size: calc(var(--text-size) * 2);
     font-weight: 500;
     letter-spacing: -0.01em;
     line-height: 1;
@@ -4967,3 +4973,5 @@ html.no-csstransitions .s-hero__content {
         font-size: 1.4rem;
     }
 }
+
+
