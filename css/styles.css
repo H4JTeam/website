@@ -3985,15 +3985,12 @@ html.no-csstransitions .s-hero__content {
     .s-header__menu-toggle {
         right: 3.2rem;
     }
-    
-    }
+
     .s-hero__content {
         padding-bottom: 14vh;
     }
     
-        
-        
-    }
+    
     .s-hero__video {
         right: auto;
         left: 9vw;
@@ -4811,9 +4808,9 @@ html.no-csstransitions .s-hero__content {
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 1600px) {
+/* @media screen and (max-width: 1600px) {
     .s-contact__email {
-        font-size: calc(var(--text-size) * 6);
+        font-size: calc(var(--text-size));
     }
 }
 
@@ -4821,7 +4818,7 @@ html.no-csstransitions .s-hero__content {
     .s-contact__email {
         font-size: 10vw;
     }
-}
+} */
 
 @media screen and (max-width: 400px) {
     .s-contact {
