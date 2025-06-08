@@ -91,16 +91,16 @@
     });
 
     $headerContent.find(".s-header__nav a, .btn").on("click", function () {
-      // at 900px and below
-      if (window.matchMedia("(max-width: 900px)").matches) {
+      // at 1200px and below
+      if (window.matchMedia("(max-width: 1200px)").matches) {
         $toggleButton.toggleClass("is-clicked");
         $siteBody.toggleClass("menu-is-open");
       }
     });
 
     $WIN.on("resize", function () {
-      // above 900px
-      if (window.matchMedia("(min-width: 901px)").matches) {
+      // above 1200px
+      if (window.matchMedia("(min-width: 1201px)").matches) {
         if ($siteBody.hasClass("menu-is-open"))
           $siteBody.removeClass("menu-is-open");
         if ($toggleButton.hasClass("is-clicked"))
@@ -304,34 +304,31 @@
 })(jQuery);
 
 /* discord pop up
-   * ------------------------------------------------------ */
+ * ------------------------------------------------------ */
 
 function openModal() {
-  document.getElementById('countryModal').style.display = 'flex';
+  document.getElementById("countryModal").style.display = "flex";
 }
 
 function closeModal() {
-  document.getElementById('countryModal').style.display = 'none';
+  document.getElementById("countryModal").style.display = "none";
 }
 
 function redirectToDiscord() {
-  window.open('https://discord.gg/bABCxGNBGg','_blank');
+  window.open("https://discord.gg/bABCxGNBGg", "_blank");
 }
 
-
-
 /* pgp
-   * ------------------------------------------------------ */
-   function openPGPModal() {
-  document.getElementById('pgpModal').style.display = 'flex';
+ * ------------------------------------------------------ */
+function openPGPModal() {
+  document.getElementById("pgpModal").style.display = "flex";
 }
 
 function closePGPModal() {
-  document.getElementById('pgpModal').style.display = 'none';
+  document.getElementById("pgpModal").style.display = "none";
 }
 
 function copyPGPKey() {
-  const key = document.getElementById('pgpKey').innerText;
+  const key = document.getElementById("pgpKey").innerText;
   navigator.clipboard.writeText(key);
 }
-
