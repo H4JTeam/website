@@ -330,5 +330,7 @@ function closePGPModal() {
 
 function copyPGPKey() {
   const key = document.getElementById("pgpKey").innerText;
+  const button = document.getElementById("pgpCopyButton");
   navigator.clipboard.writeText(key);
+  button.innerText = "Copied!";
 }
