@@ -333,4 +333,7 @@ function copyPGPKey() {
   const button = document.getElementById("pgpCopyButton");
   navigator.clipboard.writeText(key);
   button.innerText = "Copied!";
+  setTimeout(() => {
+    button.innerText = "Copy";
+  }, 2000);
 }
