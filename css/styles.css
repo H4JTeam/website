@@ -5031,6 +5031,8 @@ html.no-csstransitions .s-hero__content {
   width: 90%;
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  overflow-y: auto;
+  height: 100%;
 }
 
 .modal-content1 h2 {
