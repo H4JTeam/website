@@ -9,6 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<!--CSP  -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">  
+    
+    <!--clickjacking security measure -->
+  <script>
+    if (window.top !== window.self) {
+      window.top.location = window.location.href;
+    }
+  </script>
+
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
