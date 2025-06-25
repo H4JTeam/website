@@ -426,7 +426,46 @@ nnc2MuOLsi82AP9PW3T3dmqPimwileJ9tsC3QLuymzwbygmVRDSy1AVkCA==
     </div>
 
 
+<script>
+    // Open Discord modal
+    function openModal() {
+        const modal = document.getElementById("countryModal");
+        if (modal) modal.style.display = "block";
+    }
 
+    function closeModal() {
+        const modal = document.getElementById("countryModal");
+        if (modal) modal.style.display = "none";
+    }
+
+    // Optional: Redirect logic if needed
+    function redirectToDiscord() {
+        window.open("https://discord.gg/YOUR_INVITE_CODE", "_blank");
+        closeModal();
+    }
+
+    // Open PGP modal
+    function openPGPModal() {
+        const modal = document.getElementById("pgpModal");
+        if (modal) modal.style.display = "block";
+    }
+
+    function closePGPModal() {
+        const modal = document.getElementById("pgpModal");
+        if (modal) modal.style.display = "none";
+    }
+
+    // Copy PGP Key to clipboard
+    function copyPGPKey() {
+        const keyElement = document.getElementById("pgpKey");
+        const text = keyElement.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("PGP key copied to clipboard!");
+        }, () => {
+            alert("Failed to copy PGP key.");
+        });
+    }
+</script>
 </body>
 
 </html>
